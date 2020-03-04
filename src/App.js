@@ -1,19 +1,19 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom"; // Pages
 import { Provider } from "react-redux";
 
-// import BlogPost from "./BlogPost/BlogPost";
-
 import store from "./redux/store";
+
 import BlogHook from "./BlogPost/BlogHook";
+import NewsPage from "./BlogPost/NewsPage";
 
 function App() {
   return (
     <Provider store={store}>
-      <div>
-        {/* <BlogPost /> */}
-        {/* <button className="btn btn-primary">Tombol</button> */}
-        <BlogHook />
-      </div>
+      <BrowserRouter>
+        <Route exact path="/" component={BlogHook} />
+        <Route path="/news/:newsId" component={NewsPage} />
+      </BrowserRouter>
     </Provider>
   );
 }

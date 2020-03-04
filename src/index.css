@@ -1,13 +1,51 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.card-news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-news-items {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 2px 2px gray;
+  width: 500px;
+}
+.card-news-items img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  box-shadow: 0 0 2px 2px gray;
+  border-radius: 5px;
+  margin: 10px;
+}
+.card-news-items p.title {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: 600;
+}
+.news-page img {
+  float: left;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: 0 0 2px 2px gray;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+.news-page h4 {
+  margin: 20px;
 }
